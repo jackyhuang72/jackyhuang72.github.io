@@ -100,6 +100,12 @@
       font-variant-numeric: tabular-nums;
     }
 
+    td.number.safe {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 2px;
+    }
+
     td.subjects {
       color: var(--muted);
       white-space: normal;
@@ -143,6 +149,7 @@
           <th>採計科目</th>
           <th>錄取人數</th>
           <th>錄取分數</th>
+          <th>總分</th>
           <th>平均分數</th>
         </tr>
       </thead>
@@ -156,6 +163,7 @@
           <td class="subjects">數甲x1 物x1 化x1 英x1</td>
           <td class="number">47</td>
           <td class="number" style="color: #EF4444">229.00</td>
+          <td class="number " style="color: #EF4444">205.00</td>
           <td class="number" style="color: #EF4444">57.25</td>
         </tr>
       
@@ -167,6 +175,7 @@
           <td class="subjects">數甲x1 物x1 化x1 英x2</td>
           <td class="number">4</td>
           <td class="number" style="color: #22C55E">282.00</td>
+          <td class="number " style="color: #22C55E">254.00</td>
           <td class="number" style="color: #22C55E">56.40</td>
         </tr>
       
@@ -178,6 +187,7 @@
           <td class="subjects">數甲x1.25 物x1 化x1 英x1</td>
           <td class="number">34</td>
           <td class="number" style="color: #EF4444">238.50</td>
+          <td class="number " style="color: #EF4444">217.50</td>
           <td class="number" style="color: #EF4444">56.12</td>
         </tr>
       
@@ -189,6 +199,7 @@
           <td class="subjects">英x1 數甲x1 物x1 化x1</td>
           <td class="number">4</td>
           <td class="number" style="color: #EAB308">224.00</td>
+          <td class="number " style="color: #EAB308">205.00</td>
           <td class="number" style="color: #EAB308">56.00</td>
         </tr>
       
@@ -200,6 +211,7 @@
           <td class="subjects">數甲x1 物x1.5 化x1.5 英x1.5</td>
           <td class="number">35</td>
           <td class="number" style="color: #22C55E">300.50</td>
+          <td class="number " style="color: #22C55E">282.50</td>
           <td class="number" style="color: #22C55E">54.64</td>
         </tr>
       
@@ -211,6 +223,7 @@
           <td class="subjects">數甲x1 英x1 物x1 化x1 國x1</td>
           <td class="number">1</td>
           <td class="number" style="color: #EAB308">272.00</td>
+          <td class="number " style="color: #EAB308">260.00</td>
           <td class="number" style="color: #EAB308">54.40</td>
         </tr>
       
@@ -222,6 +235,7 @@
           <td class="subjects">數甲x1.5 英x1 物x1 化x1</td>
           <td class="number">12</td>
           <td class="number" style="color: #EF4444">244.00</td>
+          <td class="number " style="color: #EF4444">230.00</td>
           <td class="number" style="color: #EF4444">54.22</td>
         </tr>
       
@@ -233,6 +247,7 @@
           <td class="subjects">數甲x1 物x1 化x1</td>
           <td class="number">16</td>
           <td class="number" style="color: #EAB308">162.00</td>
+          <td class="number " style="color: #EAB308">156.00</td>
           <td class="number" style="color: #EAB308">54.00</td>
         </tr>
       
@@ -244,6 +259,7 @@
           <td class="subjects">化x1.5 物x1.5 數甲x1 英x1 國x1</td>
           <td class="number">2</td>
           <td class="number" style="color: #22C55E">324.00</td>
+          <td class="number " style="color: #22C55E">313.00</td>
           <td class="number" style="color: #22C55E">54.00</td>
         </tr>
       
@@ -255,6 +271,7 @@
           <td class="subjects">數甲x1 英x1 物x1 化x1 國x1</td>
           <td class="number">5</td>
           <td class="number" style="color: #22C55E">270.00</td>
+          <td class="number " style="color: #22C55E">260.00</td>
           <td class="number" style="color: #22C55E">54.00</td>
         </tr>
       
@@ -266,6 +283,7 @@
           <td class="subjects">物x1 化x1 英x1 數甲x1</td>
           <td class="number">3</td>
           <td class="number" style="color: #EAB308">214.00</td>
+          <td class="number " style="color: #EAB308">205.00</td>
           <td class="number" style="color: #EAB308">53.50</td>
         </tr>
       
@@ -277,6 +295,7 @@
           <td class="subjects">數甲x2 英x1.5 國x1</td>
           <td class="number">24</td>
           <td class="number" style="color: #EF4444">240.00</td>
+          <td class="number " style="color: #EF4444">228.50</td>
           <td class="number" style="color: #EF4444">53.33</td>
         </tr>
       
@@ -288,6 +307,7 @@
           <td class="subjects">英x2 數Ax1 地x1 歷x1 公x1</td>
           <td class="number">27</td>
           <td class="number" style="color: #EF4444">320.00</td>
+          <td class="number " style="color: #EF4444">98.00</td>
           <td class="number" style="color: #EF4444">53.33</td>
         </tr>
       
@@ -299,6 +319,7 @@
           <td class="subjects">物x1.5 數甲x1.5 英x1 化x1</td>
           <td class="number">22</td>
           <td class="number" style="color: #EF4444">266.50</td>
+          <td class="number " style="color: #EF4444">257.00</td>
           <td class="number" style="color: #EF4444">53.30</td>
         </tr>
       
@@ -310,6 +331,7 @@
           <td class="subjects">數甲x1 物x1 英x1 化x1</td>
           <td class="number">5</td>
           <td class="number" style="color: #3B82F6">213.00</td>
+          <td class="number " style="color: #3B82F6">205.00</td>
           <td class="number" style="color: #3B82F6">53.25</td>
         </tr>
       
@@ -321,6 +343,7 @@
           <td class="subjects">英x2 數甲x1 公x1</td>
           <td class="number">8</td>
           <td class="number" style="color: #EF4444">212.00</td>
+          <td class="number " style="color: #EF4444">148.00</td>
           <td class="number" style="color: #EF4444">53.00</td>
         </tr>
       
@@ -332,6 +355,7 @@
           <td class="subjects">數甲x1 英x1 物x1 國x1 化x1</td>
           <td class="number">5</td>
           <td class="number" style="color: #EAB308">265.00</td>
+          <td class="number " style="color: #EAB308">260.00</td>
           <td class="number" style="color: #EAB308">53.00</td>
         </tr>
       
@@ -343,6 +367,7 @@
           <td class="subjects">數甲x1 英x1 物x1 化x1 國x1</td>
           <td class="number">25</td>
           <td class="number" style="color: #22C55E">265.00</td>
+          <td class="number " style="color: #22C55E">260.00</td>
           <td class="number" style="color: #22C55E">53.00</td>
         </tr>
       
@@ -354,6 +379,7 @@
           <td class="subjects">數甲x1 英x1 物x1 化x1 國x1</td>
           <td class="number">16</td>
           <td class="number" style="color: #EAB308">264.00</td>
+          <td class="number " style="color: #EAB308">260.00</td>
           <td class="number" style="color: #EAB308">52.80</td>
         </tr>
       
@@ -365,6 +391,7 @@
           <td class="subjects">數Ax1.5 英x1.5 公x1</td>
           <td class="number">1</td>
           <td class="number" style="color: #22C55E">211.00</td>
+          <td class="number " style="color: #22C55E">73.50</td>
           <td class="number" style="color: #22C55E">52.75</td>
         </tr>
       
@@ -376,6 +403,7 @@
           <td class="subjects">數甲x1.5 英x1.5 國x1</td>
           <td class="number">13</td>
           <td class="number" style="color: #EF4444">210.50</td>
+          <td class="number " style="color: #EF4444">203.50</td>
           <td class="number" style="color: #EF4444">52.62</td>
         </tr>
       
@@ -387,6 +415,7 @@
           <td class="subjects">物x1 化x1 數甲x1 自x1 英x1</td>
           <td class="number">3</td>
           <td class="number" style="color: #22C55E">263.00</td>
+          <td class="number " style="color: #22C55E">205.00</td>
           <td class="number" style="color: #22C55E">52.60</td>
         </tr>
       
@@ -398,6 +427,7 @@
           <td class="subjects">數甲x1 物x1 化x1 英x1 國x1</td>
           <td class="number">22</td>
           <td class="number" style="color: #EF4444">262.00</td>
+          <td class="number " style="color: #EF4444">260.00</td>
           <td class="number" style="color: #EF4444">52.40</td>
         </tr>
       
@@ -409,6 +439,7 @@
           <td class="subjects">數Ax1 英x1 地x1 歷x1 公x1</td>
           <td class="number">16</td>
           <td class="number" style="color: #EF4444">262.00</td>
+          <td class="number " style="color: #EF4444">49.00</td>
           <td class="number" style="color: #EF4444">52.40</td>
         </tr>
       
@@ -420,6 +451,7 @@
           <td class="subjects">數甲x1 物x1 英x1 化x1</td>
           <td class="number">52</td>
           <td class="number" style="color: #3B82F6">209.00</td>
+          <td class="number " style="color: #3B82F6">205.00</td>
           <td class="number" style="color: #3B82F6">52.25</td>
         </tr>
       
@@ -431,6 +463,7 @@
           <td class="subjects">數甲x1 英x1 物x1 國x1 化x1</td>
           <td class="number">26</td>
           <td class="number" style="color: #EAB308">261.00</td>
+          <td class="number " style="color: #EAB308">260.00</td>
           <td class="number" style="color: #EAB308">52.20</td>
         </tr>
       
@@ -442,6 +475,7 @@
           <td class="subjects">數甲x1 英x1 物x1 國x1 化x1</td>
           <td class="number">10</td>
           <td class="number" style="color: #EAB308">261.00</td>
+          <td class="number " style="color: #EAB308">260.00</td>
           <td class="number" style="color: #EAB308">52.20</td>
         </tr>
       
@@ -453,6 +487,7 @@
           <td class="subjects">數甲x2 英x2 國x1</td>
           <td class="number">3</td>
           <td class="number" style="color: #22C55E">261.00</td>
+          <td class="number " style="color: #22C55E">253.00</td>
           <td class="number" style="color: #22C55E">52.20</td>
         </tr>
       
@@ -464,6 +499,7 @@
           <td class="subjects">數甲x2 英x1.5 國x1</td>
           <td class="number">4</td>
           <td class="number" style="color: #22C55E">234.50</td>
+          <td class="number " style="color: #22C55E">228.50</td>
           <td class="number" style="color: #22C55E">52.11</td>
         </tr>
       
@@ -475,6 +511,7 @@
           <td class="subjects">數甲x1 英x1 物x1 化x1 國x1</td>
           <td class="number">4</td>
           <td class="number" style="color: #3B82F6">259.00</td>
+          <td class="number safe" style="color: #3B82F6">260.00</td>
           <td class="number" style="color: #3B82F6">51.80</td>
         </tr>
       
@@ -486,6 +523,7 @@
           <td class="subjects">物x1 化x1 數甲x1 自x1 英x1</td>
           <td class="number">14</td>
           <td class="number" style="color: #22C55E">258.00</td>
+          <td class="number " style="color: #22C55E">205.00</td>
           <td class="number" style="color: #22C55E">51.60</td>
         </tr>
       
@@ -497,6 +535,7 @@
           <td class="subjects">數甲x1.5 物x1.5 化x1 英x1 國x1</td>
           <td class="number">8</td>
           <td class="number" style="color: #22C55E">309.50</td>
+          <td class="number safe" style="color: #22C55E">312.00</td>
           <td class="number" style="color: #22C55E">51.58</td>
         </tr>
       
@@ -508,6 +547,7 @@
           <td class="subjects">英x1.5 國x1.25 數Ax1.25 公x1 地x1</td>
           <td class="number">45</td>
           <td class="number" style="color: #EF4444">309.25</td>
+          <td class="number " style="color: #EF4444">142.25</td>
           <td class="number" style="color: #EF4444">51.54</td>
         </tr>
       
@@ -519,6 +559,7 @@
           <td class="subjects">物x1.5 數甲x1 化x1 英x1</td>
           <td class="number">6</td>
           <td class="number" style="color: #22C55E">231.50</td>
+          <td class="number safe" style="color: #22C55E">232.00</td>
           <td class="number" style="color: #22C55E">51.44</td>
         </tr>
       
@@ -530,6 +571,7 @@
           <td class="subjects">數甲x1.5 物x1.5 化x1 英x1 國x1</td>
           <td class="number">4</td>
           <td class="number" style="color: #22C55E">306.50</td>
+          <td class="number safe" style="color: #22C55E">312.00</td>
           <td class="number" style="color: #22C55E">51.08</td>
         </tr>
       
@@ -541,6 +583,7 @@
           <td class="subjects">物x1 數甲x1 化x1 英x1 國x1</td>
           <td class="number">41</td>
           <td class="number" style="color: #EF4444">255.00</td>
+          <td class="number safe" style="color: #EF4444">260.00</td>
           <td class="number" style="color: #EF4444">51.00</td>
         </tr>
       
@@ -552,6 +595,7 @@
           <td class="subjects">數甲x1 物x1 英x1 化x1 國x1</td>
           <td class="number">48</td>
           <td class="number" style="color: #3B82F6">255.00</td>
+          <td class="number safe" style="color: #3B82F6">260.00</td>
           <td class="number" style="color: #3B82F6">51.00</td>
         </tr>
       
@@ -563,6 +607,7 @@
           <td class="subjects">數甲x1 英x1 國x1 數Ax1</td>
           <td class="number">5</td>
           <td class="number" style="color: #3B82F6">204.00</td>
+          <td class="number " style="color: #3B82F6">154.00</td>
           <td class="number" style="color: #3B82F6">51.00</td>
         </tr>
       
@@ -574,6 +619,7 @@
           <td class="subjects">數甲x1 物x1 英x1 化x1 國x1</td>
           <td class="number">3</td>
           <td class="number" style="color: #EAB308">254.00</td>
+          <td class="number safe" style="color: #EAB308">260.00</td>
           <td class="number" style="color: #EAB308">50.80</td>
         </tr>
       
@@ -585,6 +631,7 @@
           <td class="subjects">物x1 化x1 英x1 數甲x1</td>
           <td class="number">32</td>
           <td class="number" style="color: #EAB308">203.00</td>
+          <td class="number safe" style="color: #EAB308">205.00</td>
           <td class="number" style="color: #EAB308">50.75</td>
         </tr>
       
@@ -596,6 +643,7 @@
           <td class="subjects">物x1 數甲x1 化x1 英x1</td>
           <td class="number">12</td>
           <td class="number" style="color: #22C55E">203.00</td>
+          <td class="number safe" style="color: #22C55E">205.00</td>
           <td class="number" style="color: #22C55E">50.75</td>
         </tr>
       
@@ -607,6 +655,7 @@
           <td class="subjects">數Ax2 英x1.5 公x1 地x1</td>
           <td class="number">10</td>
           <td class="number" style="color: #EF4444">279.00</td>
+          <td class="number " style="color: #EF4444">73.50</td>
           <td class="number" style="color: #EF4444">50.73</td>
         </tr>
       
@@ -618,6 +667,7 @@
           <td class="subjects">數甲x1 物x1 化x1 英x1 國x1</td>
           <td class="number">19</td>
           <td class="number" style="color: #EF4444">253.00</td>
+          <td class="number safe" style="color: #EF4444">260.00</td>
           <td class="number" style="color: #EF4444">50.60</td>
         </tr>
       
@@ -629,6 +679,7 @@
           <td class="subjects">數甲x1.5 英x1.5 國x1</td>
           <td class="number">16</td>
           <td class="number" style="color: #D946EF">202.00</td>
+          <td class="number safe" style="color: #D946EF">203.50</td>
           <td class="number" style="color: #D946EF">50.50</td>
         </tr>
       
@@ -640,6 +691,7 @@
           <td class="subjects">數甲x1.25 物x1.25 化x1.25 英x1</td>
           <td class="number">53</td>
           <td class="number" style="color: #EF4444">239.75</td>
+          <td class="number safe" style="color: #EF4444">244.00</td>
           <td class="number" style="color: #EF4444">50.47</td>
         </tr>
       
@@ -651,6 +703,7 @@
           <td class="subjects">數甲x1 物x1 化x1 英x1 國x1</td>
           <td class="number">7</td>
           <td class="number" style="color: #EAB308">252.00</td>
+          <td class="number safe" style="color: #EAB308">260.00</td>
           <td class="number" style="color: #EAB308">50.40</td>
         </tr>
       
@@ -662,6 +715,7 @@
           <td class="subjects">數甲x2 物x2 英x1 化x1</td>
           <td class="number">15</td>
           <td class="number" style="color: #EF4444">302.00</td>
+          <td class="number safe" style="color: #EF4444">309.00</td>
           <td class="number" style="color: #EF4444">50.33</td>
         </tr>
       
@@ -673,6 +727,7 @@
           <td class="subjects">數甲x1 物x1 化x1 英x1</td>
           <td class="number">12</td>
           <td class="number" style="color: #22C55E">201.00</td>
+          <td class="number safe" style="color: #22C55E">205.00</td>
           <td class="number" style="color: #22C55E">50.25</td>
         </tr>
       
@@ -684,6 +739,7 @@
           <td class="subjects">數Ax1.5 數甲x1.5 物x1 化x1 英x1</td>
           <td class="number">17</td>
           <td class="number" style="color: #EF4444">301.00</td>
+          <td class="number " style="color: #EF4444">230.00</td>
           <td class="number" style="color: #EF4444">50.17</td>
         </tr>
       
@@ -695,6 +751,7 @@
           <td class="subjects">物x1.5 數甲x1.5 英x1 化x1 國x1</td>
           <td class="number">4</td>
           <td class="number" style="color: #EAB308">301.00</td>
+          <td class="number safe" style="color: #EAB308">312.00</td>
           <td class="number" style="color: #EAB308">50.17</td>
         </tr>
       
@@ -706,6 +763,7 @@
           <td class="subjects">化x1 英x1 數甲x1 物x1 國x1</td>
           <td class="number">30</td>
           <td class="number" style="color: #EF4444">250.00</td>
+          <td class="number safe" style="color: #EF4444">260.00</td>
           <td class="number" style="color: #EF4444">50.00</td>
         </tr>
       
@@ -717,6 +775,7 @@
           <td class="subjects">數甲x1 物x1 英x1</td>
           <td class="number">4</td>
           <td class="number" style="color: #3B82F6">150.00</td>
+          <td class="number safe" style="color: #3B82F6">153.00</td>
           <td class="number" style="color: #3B82F6">50.00</td>
         </tr>
       
@@ -728,6 +787,7 @@
           <td class="subjects">英x1 物x1 數甲x1 化x1 國x1</td>
           <td class="number">6</td>
           <td class="number" style="color: #EAB308">250.00</td>
+          <td class="number safe" style="color: #EAB308">260.00</td>
           <td class="number" style="color: #EAB308">50.00</td>
         </tr>
       
@@ -739,6 +799,7 @@
           <td class="subjects">數Ax1 英x1 國x1 地x1.5 歷x1.5</td>
           <td class="number">29</td>
           <td class="number" style="color: #D946EF">299.00</td>
+          <td class="number " style="color: #D946EF">104.00</td>
           <td class="number" style="color: #D946EF">49.83</td>
         </tr>
       
@@ -750,6 +811,7 @@
           <td class="subjects">物x1.5 數甲x1.5 英x1 化x1 國x1</td>
           <td class="number">1</td>
           <td class="number" style="color: #EAB308">299.00</td>
+          <td class="number safe" style="color: #EAB308">312.00</td>
           <td class="number" style="color: #EAB308">49.83</td>
         </tr>
       
@@ -761,6 +823,7 @@
           <td class="subjects">數甲x1 物x1 英x1 化x1</td>
           <td class="number">30</td>
           <td class="number" style="color: #06B6D4">199.00</td>
+          <td class="number safe" style="color: #06B6D4">205.00</td>
           <td class="number" style="color: #06B6D4">49.75</td>
         </tr>
       
@@ -772,6 +835,7 @@
           <td class="subjects">數甲x1 物x1 化x1 英x1 國x1</td>
           <td class="number">20</td>
           <td class="number" style="color: #EF4444">248.00</td>
+          <td class="number safe" style="color: #EF4444">260.00</td>
           <td class="number" style="color: #EF4444">49.60</td>
         </tr>
       
@@ -783,6 +847,7 @@
           <td class="subjects">數甲x1 物x1 化x1 英x1 國x1</td>
           <td class="number">25</td>
           <td class="number" style="color: #EAB308">248.00</td>
+          <td class="number safe" style="color: #EAB308">260.00</td>
           <td class="number" style="color: #EAB308">49.60</td>
         </tr>
       
@@ -794,6 +859,7 @@
           <td class="subjects">數Ax2 英x2 國x1 公x1</td>
           <td class="number">16</td>
           <td class="number" style="color: #D946EF">297.00</td>
+          <td class="number " style="color: #D946EF">153.00</td>
           <td class="number" style="color: #D946EF">49.50</td>
         </tr>
       
@@ -805,6 +871,7 @@
           <td class="subjects">物x1 數甲x1 化x1 英x1</td>
           <td class="number">9</td>
           <td class="number" style="color: #22C55E">198.00</td>
+          <td class="number safe" style="color: #22C55E">205.00</td>
           <td class="number" style="color: #22C55E">49.50</td>
         </tr>
       
@@ -816,6 +883,7 @@
           <td class="subjects">數甲x1 英x1 物x1 化x1</td>
           <td class="number">4</td>
           <td class="number" style="color: #E5E7EB">198.00</td>
+          <td class="number safe" style="color: #E5E7EB">205.00</td>
           <td class="number" style="color: #E5E7EB">49.50</td>
         </tr>
       
@@ -827,6 +895,7 @@
           <td class="subjects">數Ax1.25 英x1.25 公x1.25 國x1</td>
           <td class="number">7</td>
           <td class="number" style="color: #EF4444">235.00</td>
+          <td class="number " style="color: #EF4444">116.25</td>
           <td class="number" style="color: #EF4444">49.47</td>
         </tr>
       
@@ -838,6 +907,7 @@
           <td class="subjects">數甲x2 英x1.5 物x1</td>
           <td class="number">22</td>
           <td class="number" style="color: #EF4444">222.50</td>
+          <td class="number safe" style="color: #EF4444">227.50</td>
           <td class="number" style="color: #EF4444">49.44</td>
         </tr>
       
@@ -849,6 +919,7 @@
           <td class="subjects">數甲x2 英x1.5 國x1</td>
           <td class="number">15</td>
           <td class="number" style="color: #D946EF">222.50</td>
+          <td class="number safe" style="color: #D946EF">228.50</td>
           <td class="number" style="color: #D946EF">49.44</td>
         </tr>
       
@@ -860,6 +931,7 @@
           <td class="subjects">數甲x1 英x1 地x1 歷x1 數Ax1</td>
           <td class="number">16</td>
           <td class="number" style="color: #EF4444">247.00</td>
+          <td class="number " style="color: #EF4444">99.00</td>
           <td class="number" style="color: #EF4444">49.40</td>
         </tr>
       
@@ -871,6 +943,7 @@
           <td class="subjects">數甲x1 物x1 英x1 化x1 國x1</td>
           <td class="number">20</td>
           <td class="number" style="color: #EAB308">247.00</td>
+          <td class="number safe" style="color: #EAB308">260.00</td>
           <td class="number" style="color: #EAB308">49.40</td>
         </tr>
       
@@ -882,6 +955,7 @@
           <td class="subjects">英x1 物x1 數甲x1 化x1 國x1</td>
           <td class="number">8</td>
           <td class="number" style="color: #EAB308">246.00</td>
+          <td class="number safe" style="color: #EAB308">260.00</td>
           <td class="number" style="color: #EAB308">49.20</td>
         </tr>
       
@@ -893,6 +967,7 @@
           <td class="subjects">英x1.5 數甲x1 國x1</td>
           <td class="number">14</td>
           <td class="number" style="color: #22C55E">172.00</td>
+          <td class="number safe" style="color: #22C55E">178.50</td>
           <td class="number" style="color: #22C55E">49.14</td>
         </tr>
       
@@ -904,6 +979,7 @@
           <td class="subjects">數甲x1.5 物x1.25 化x1 英x1 國x1</td>
           <td class="number">16</td>
           <td class="number" style="color: #EAB308">282.00</td>
+          <td class="number safe" style="color: #EAB308">298.50</td>
           <td class="number" style="color: #EAB308">49.04</td>
         </tr>
       
@@ -915,6 +991,7 @@
           <td class="subjects">物x1.5 化x1.5 數甲x1</td>
           <td class="number">61</td>
           <td class="number" style="color: #3B82F6">196.00</td>
+          <td class="number safe" style="color: #3B82F6">209.00</td>
           <td class="number" style="color: #3B82F6">49.00</td>
         </tr>
       
@@ -926,6 +1003,7 @@
           <td class="subjects">數甲x1 英x1 物x1 化x1</td>
           <td class="number">8</td>
           <td class="number" style="color: #06B6D4">196.00</td>
+          <td class="number safe" style="color: #06B6D4">205.00</td>
           <td class="number" style="color: #06B6D4">49.00</td>
         </tr>
       
@@ -937,6 +1015,7 @@
           <td class="subjects">物x2 化x2 數甲x1</td>
           <td class="number">6</td>
           <td class="number" style="color: #E5E7EB">245.00</td>
+          <td class="number safe" style="color: #E5E7EB">262.00</td>
           <td class="number" style="color: #E5E7EB">49.00</td>
         </tr>
       
@@ -948,6 +1027,7 @@
           <td class="subjects">物x1.5 數甲x1.5 英x1 化x1 國x1</td>
           <td class="number">16</td>
           <td class="number" style="color: #EAB308">293.50</td>
+          <td class="number safe" style="color: #EAB308">312.00</td>
           <td class="number" style="color: #EAB308">48.92</td>
         </tr>
       
@@ -959,6 +1039,7 @@
           <td class="subjects">數甲x1 物x1 英x1 化x1 國x1</td>
           <td class="number">24</td>
           <td class="number" style="color: #3B82F6">244.00</td>
+          <td class="number safe" style="color: #3B82F6">260.00</td>
           <td class="number" style="color: #3B82F6">48.80</td>
         </tr>
       
@@ -970,6 +1051,7 @@
           <td class="subjects">數甲x1 物x1 英x1 化x1</td>
           <td class="number">29</td>
           <td class="number" style="color: #06B6D4">195.00</td>
+          <td class="number safe" style="color: #06B6D4">205.00</td>
           <td class="number" style="color: #06B6D4">48.75</td>
         </tr>
       
@@ -981,6 +1063,7 @@
           <td class="subjects">數甲x1.5 英x1.5 國x1</td>
           <td class="number">26</td>
           <td class="number" style="color: #EAB308">194.50</td>
+          <td class="number safe" style="color: #EAB308">203.50</td>
           <td class="number" style="color: #EAB308">48.62</td>
         </tr>
       
@@ -992,6 +1075,7 @@
           <td class="subjects">英x2 數Ax2 國x1.5 歷x1 地x1</td>
           <td class="number">32</td>
           <td class="number" style="color: #D946EF">364.50</td>
+          <td class="number " style="color: #D946EF">180.50</td>
           <td class="number" style="color: #D946EF">48.60</td>
         </tr>
       
@@ -1003,6 +1087,7 @@
           <td class="subjects">英x1 數甲x1 物x1 化x1 國x1</td>
           <td class="number">6</td>
           <td class="number" style="color: #EAB308">243.00</td>
+          <td class="number safe" style="color: #EAB308">260.00</td>
           <td class="number" style="color: #EAB308">48.60</td>
         </tr>
       
@@ -1014,6 +1099,7 @@
           <td class="subjects">英x1.5 國x1.5 數Ax1.5 地x1 歷x1</td>
           <td class="number">26</td>
           <td class="number" style="color: #EF4444">315.50</td>
+          <td class="number " style="color: #EF4444">156.00</td>
           <td class="number" style="color: #EF4444">48.54</td>
         </tr>
       
@@ -1025,6 +1111,7 @@
           <td class="subjects">數甲x1 物x1 英x1 化x1</td>
           <td class="number">35</td>
           <td class="number" style="color: #22C55E">193.00</td>
+          <td class="number safe" style="color: #22C55E">205.00</td>
           <td class="number" style="color: #22C55E">48.25</td>
         </tr>
       
@@ -1036,6 +1123,7 @@
           <td class="subjects">數甲x1 物x1 英x1 國x1 化x1</td>
           <td class="number">36</td>
           <td class="number" style="color: #EF4444">241.00</td>
+          <td class="number safe" style="color: #EF4444">260.00</td>
           <td class="number" style="color: #EF4444">48.20</td>
         </tr>
       
@@ -1047,6 +1135,7 @@
           <td class="subjects">數甲x1 英x1 物x1 化x1 數Ax1</td>
           <td class="number">20</td>
           <td class="number" style="color: #EF4444">241.00</td>
+          <td class="number " style="color: #EF4444">205.00</td>
           <td class="number" style="color: #EF4444">48.20</td>
         </tr>
       
@@ -1058,6 +1147,7 @@
           <td class="subjects">化x1 物x1 數甲x1 英x1 國x1</td>
           <td class="number">35</td>
           <td class="number" style="color: #EAB308">241.00</td>
+          <td class="number safe" style="color: #EAB308">260.00</td>
           <td class="number" style="color: #EAB308">48.20</td>
         </tr>
       
@@ -1069,6 +1159,7 @@
           <td class="subjects">英x2 數甲x2 國x1.5</td>
           <td class="number">16</td>
           <td class="number" style="color: #D946EF">264.50</td>
+          <td class="number safe" style="color: #D946EF">280.50</td>
           <td class="number" style="color: #D946EF">48.09</td>
         </tr>
       
@@ -1080,6 +1171,7 @@
           <td class="subjects">物x1 數甲x1 英x1 化x1 國x1</td>
           <td class="number">28</td>
           <td class="number" style="color: #3B82F6">240.00</td>
+          <td class="number safe" style="color: #3B82F6">260.00</td>
           <td class="number" style="color: #3B82F6">48.00</td>
         </tr>
       
@@ -1091,6 +1183,7 @@
           <td class="subjects">英x2 數甲x2 國x1.5</td>
           <td class="number">17</td>
           <td class="number" style="color: #D946EF">263.50</td>
+          <td class="number safe" style="color: #D946EF">280.50</td>
           <td class="number" style="color: #D946EF">47.91</td>
         </tr>
       
@@ -1102,6 +1195,7 @@
           <td class="subjects">化x1.5 物x1 數甲x1 英x1 國x1</td>
           <td class="number">26</td>
           <td class="number" style="color: #22C55E">263.50</td>
+          <td class="number safe" style="color: #22C55E">286.00</td>
           <td class="number" style="color: #22C55E">47.91</td>
         </tr>
       
@@ -1113,6 +1207,7 @@
           <td class="subjects">英x1.25 國x1 數甲x1</td>
           <td class="number">20</td>
           <td class="number" style="color: #D946EF">155.00</td>
+          <td class="number safe" style="color: #D946EF">166.25</td>
           <td class="number" style="color: #D946EF">47.69</td>
         </tr>
       
@@ -1124,6 +1219,7 @@
           <td class="subjects">數Ax2 英x1.5 公x1</td>
           <td class="number">13</td>
           <td class="number" style="color: #D946EF">214.00</td>
+          <td class="number " style="color: #D946EF">73.50</td>
           <td class="number" style="color: #D946EF">47.56</td>
         </tr>
       
@@ -1135,6 +1231,7 @@
           <td class="subjects">數甲x1 物x1 化x1 英x1</td>
           <td class="number">18</td>
           <td class="number" style="color: #22C55E">190.00</td>
+          <td class="number safe" style="color: #22C55E">205.00</td>
           <td class="number" style="color: #22C55E">47.50</td>
         </tr>
       
@@ -1146,6 +1243,7 @@
           <td class="subjects">英x2 數甲x1.25 國x1.25</td>
           <td class="number">4</td>
           <td class="number" style="color: #EAB308">213.25</td>
+          <td class="number safe" style="color: #EAB308">229.25</td>
           <td class="number" style="color: #EAB308">47.39</td>
         </tr>
       
@@ -1157,6 +1255,7 @@
           <td class="subjects">數Ax2 英x2 國x1 地x1 公x1</td>
           <td class="number">31</td>
           <td class="number" style="color: #D946EF">331.00</td>
+          <td class="number " style="color: #D946EF">153.00</td>
           <td class="number" style="color: #D946EF">47.29</td>
         </tr>
       
@@ -1168,6 +1267,7 @@
           <td class="subjects">數甲x2 物x1.5 化x1 英x1.5</td>
           <td class="number">11</td>
           <td class="number" style="color: #22C55E">283.50</td>
+          <td class="number safe" style="color: #22C55E">306.50</td>
           <td class="number" style="color: #22C55E">47.25</td>
         </tr>
       
@@ -1179,6 +1279,7 @@
           <td class="subjects">國x1.5 英x1.5 數Ax1.5 地x1 公x1</td>
           <td class="number">16</td>
           <td class="number" style="color: #D946EF">307.00</td>
+          <td class="number " style="color: #D946EF">156.00</td>
           <td class="number" style="color: #D946EF">47.23</td>
         </tr>
       
@@ -1190,6 +1291,7 @@
           <td class="subjects">物x1 數甲x1 數Ax1 英x1 化x1</td>
           <td class="number">20</td>
           <td class="number" style="color: #3B82F6">236.00</td>
+          <td class="number " style="color: #3B82F6">205.00</td>
           <td class="number" style="color: #3B82F6">47.20</td>
         </tr>
       
@@ -1201,6 +1303,7 @@
           <td class="subjects">數甲x2 英x2 國x1</td>
           <td class="number">31</td>
           <td class="number" style="color: #D946EF">236.00</td>
+          <td class="number safe" style="color: #D946EF">253.00</td>
           <td class="number" style="color: #D946EF">47.20</td>
         </tr>
       
@@ -1212,6 +1315,7 @@
           <td class="subjects">英x2 數甲x2 國x1</td>
           <td class="number">20</td>
           <td class="number" style="color: #EAB308">236.00</td>
+          <td class="number safe" style="color: #EAB308">253.00</td>
           <td class="number" style="color: #EAB308">47.20</td>
         </tr>
       
@@ -1223,6 +1327,7 @@
           <td class="subjects">英x2 數Ax2 國x1.5 公x1</td>
           <td class="number">16</td>
           <td class="number" style="color: #D946EF">306.50</td>
+          <td class="number " style="color: #D946EF">180.50</td>
           <td class="number" style="color: #D946EF">47.15</td>
         </tr>
       
@@ -1234,6 +1339,7 @@
           <td class="subjects">英x2 數Ax2 國x1.5 公x1</td>
           <td class="number">53</td>
           <td class="number" style="color: #D946EF">306.00</td>
+          <td class="number " style="color: #D946EF">180.50</td>
           <td class="number" style="color: #D946EF">47.08</td>
         </tr>
       
@@ -1245,12 +1351,13 @@
           <td class="subjects">數甲x1 物x1 化x1 英x1 國x1</td>
           <td class="number">15</td>
           <td class="number" style="color: #EF4444">235.00</td>
+          <td class="number safe" style="color: #EF4444">260.00</td>
           <td class="number" style="color: #EF4444">47.00</td>
         </tr>
       
       </tbody>
     </table>
   </div>
-  <footer>產生時間：2026/8/4 下午12:30:09</footer>
+  <footer>產生時間：2026/8/4 下午3:44:20</footer>
 </body>
 </html>
